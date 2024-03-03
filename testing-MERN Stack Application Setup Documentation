@@ -1,0 +1,20 @@
+MERN(React, Node.js, MonjoDB) Stack Application Setup Documentation
+
+1. Installing MongoDB on ubuntu = https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+
+2. Install Node.js and npm on Ubuntu = https://linuxize.com/post/how-to-install-node-js-on-ubuntu-20-04/ 
+
+3. Downloading node.js application 
+    # git clone https://github.com/Mrunal00712/nodejs-app-mern.git    //make changes in mongoC.js file for database
+    # cd /n...
+      /# npm install
+       # npm start
+       # curl http://localhost:4001
+
+4. Downloading react application (front-end)
+    # git clone https://github.com/Mrunal00712/reactjs-app-mern.git
+    # cd /r...
+      /# npm install
+      /# npm start
+       # curl http://localhost:3000
+
