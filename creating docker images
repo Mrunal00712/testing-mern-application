@@ -1,0 +1,31 @@
+step 1. nodejs-app:in docker image creation 
+*************************************************
+Dockerfile
+# Use the official Node.js image as base
+FROM node:latest
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application
+COPY . .
+
+# Expose the port your app runs on
+EXPOSE 3000
+
+# Command to run your application
+CMD ["npm", "start"]
+****************************************************************************88
+step 2.  docker build -t nodejs-app:in .
+
+step 3. launching container
+docker run -d --name backend-container -p 3001:3001 nodejs-app:in
+
+**************************************************************************************************************************8
+step 4 
